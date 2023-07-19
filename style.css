@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+/* common */
+html{
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    line-height: 1.5;
+}
+
+
+body{
+  margin:0;
+  margin-top:18px;
+  font-family: inherit;
+  line-height: inherit;
+}
+
+img{
+  font-size:0;
+}
+
+h1,h3,p {
+  margin:0;
+}
+h3{
+  font-weight: 500;
+}
+
+a{
+  text-decoration: none;
+  color:inherit;
+  padding: 6px;
+}
+
+small{
+  color: #6367F1;
+  background: #EEF3FF;
+  padding:6px;
+  border-radius: 0.25rem;
+}
+
+.main{
+  padding: 0;
+}
+
+.color{
+  color: #6367F1;
+}
+
+.big-box{
+  width: calc(100% - 50px);
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 96px;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+
+.main{
+  flex-direction: column;
+}
+
+
+/* section */
+
+.big-flex{
+  border-bottom: solid #E4E7EB 2px;
+  justify-content: space-between;
+}
+
+
+.middle{
+  justify-content: space-between;
+}
+
+.left-view{
+  border-right:solid #E4E7EB 2px;
+  margin:16px;
+  margin-right: 0;
+  padding-right: 16px;
+}
+.right-view{
+  margin:14px;
+}
+.right-view p{
+  padding-left: 2px;
+}
+
+.mega-flex{
+  margin-top: auto;
+  bottom: 0;
+}
+
+
+
+
+.name{
+  margin-top: 16px;
+}
+.name h3{
+  padding-left: 16px;
+}
+
+.name img{
+  border-radius: 50%;
+}
+.name-doc{
+  flex-flow: column;
+}
+.name-doc p{
+  color:#9CA3AF;
+}
+/* mediacery */
+@media (min-width:768px) {
+  .main{
+  flex-direction: initial;
+  width: calc(100% - 80px);
+  gap: 98px;
+  margin:0 auto;
+  }
+  .big-box{
+    width: 100%;
+    margin: 0;
+  }
+}
+
+
+@media (min-width:1024px) {
+  .main{
+    flex-direction: initial;
+    width: calc(100% - 40px);
+    gap: 98px;
+    margin:0 auto;
+    }
+    .big-box{
+      width: 100%;
+      margin: 0;
+    }
+  }
+  
+
+
+@media (min-width:1697px) {
+  body{
+  max-width: 1697px;
+  margin:0 auto;
+  }
+  .main{
+    flex-direction: initial;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+    gap: 98px;
+    margin: auto;
+    }
+}
+
